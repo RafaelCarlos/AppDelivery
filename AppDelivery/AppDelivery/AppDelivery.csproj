@@ -38,11 +38,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Users\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
+    <Compile Include="Pages\Users\CadastroPage.xaml.cs">
+      <DependentUpon>CadastroPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Users\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,14 +84,18 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\Users\Login.xaml">
+    <EmbeddedResource Include="Pages\Users\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Users\CadastroPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

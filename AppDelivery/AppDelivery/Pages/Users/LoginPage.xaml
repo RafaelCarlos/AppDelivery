@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDelivery.Pages.Users.Login">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Inscrever" Clicked="OnSignUpButtonClicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
             <Label Text="Login" XAlign="Center" FontAttributes="Bold" 
@@ -11,9 +14,9 @@
             <Label Text="Senha" />
             <Entry x:Name="senhaLogin" Placeholder="Senha" IsPassword="true" />
 
-            <Button Text="Acessar" />
-            <Label x:Name="txtCadastrarLogin" Text="Cadastrar" XAlign="Center" FontAttributes="Bold" 
-                   FontSize="Large"         VerticalTextAlignment="Center"/>
+            <Button Text="Acessar" Clicked="OnLoginButtonClicked" />
+            <!--<Label x:Name="txtCadastrarLogin" Text="Cadastrar" XAlign="Center" FontAttributes="Bold" 
+                   FontSize="Large"         VerticalTextAlignment="Center"/>-->
             <Label x:Name="messageLabel" />
         </StackLayout>
     </ContentPage.Content>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using AppDelivery.Pages.Users;
 
 namespace AppDelivery
 {
@@ -13,5 +14,12 @@ namespace AppDelivery
         {
             InitializeComponent();
         }
+        async void OnLogoutButtonClicked(object sender, EventArgs e)
+        {
+            App.IsUserLoggedIn = false;
+            Navigation.InsertPageBefore(new Login(), this);
+            await Navigation.PopAsync();
+        }
+
     }
 }

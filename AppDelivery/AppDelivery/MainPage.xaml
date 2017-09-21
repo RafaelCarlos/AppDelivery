@@ -4,8 +4,13 @@
              xmlns:local="clr-namespace:AppDelivery"
              x:Class="AppDelivery.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Main app content goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
