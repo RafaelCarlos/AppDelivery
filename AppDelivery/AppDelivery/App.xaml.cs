@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using AppDelivery.Pages.Users;
 
 using Xamarin.Forms;
 
@@ -13,7 +14,7 @@ namespace AppDelivery
         {
             InitializeComponent();
 
-            MainPage = new AppDelivery.MainPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

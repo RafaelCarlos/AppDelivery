@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDelivery.Pages.Users.Login">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Login" XAlign="Center" FontAttributes="Bold" 
+                   FontSize="30"         VerticalTextAlignment="Center"/>
+            <Label Text="E-mail" />
+            <Entry x:Name="emailLogin" Placeholder="E-mail" />
+            <Label Text="Senha" />
+            <Entry x:Name="senhaLogin" Placeholder="Senha" IsPassword="true" />
+
+            <Button Text="Acessar" />
+            <Label x:Name="txtCadastrarLogin" Text="Cadastrar" XAlign="Center" FontAttributes="Bold" 
+                   FontSize="Large"         VerticalTextAlignment="Center"/>
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
