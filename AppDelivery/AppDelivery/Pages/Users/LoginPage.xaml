@@ -15,6 +15,8 @@
             <Entry x:Name="senhaLogin" Placeholder="Senha" IsPassword="true" />
 
             <Button Text="Acessar" Clicked="OnLoginButtonClicked" />
+            <Button x:Name="btLogarFacebook" Text="Inscrever-se Com Facebook"  BackgroundColor="#4282b9" Image="ic_facebook.png" />
+            <Button Text="Inscrever-se Com Google" x:Name="btLogarGoogle" BackgroundColor="#f78a7e" Image="ic_google.png"   />
             <!--<Label x:Name="txtCadastrarLogin" Text="Cadastrar" XAlign="Center" FontAttributes="Bold" 
                    FontSize="Large"         VerticalTextAlignment="Center"/>-->
             <Label x:Name="messageLabel" />
