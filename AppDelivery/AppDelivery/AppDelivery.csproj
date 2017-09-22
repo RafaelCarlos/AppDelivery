@@ -43,6 +43,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Endereco\EnderecoCadastroPage.xaml.cs">
+      <DependentUpon>EnderecoCadastroPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Users\CadastroPage.xaml.cs">
       <DependentUpon>CadastroPage.xaml</DependentUpon>
     </Compile>
@@ -84,7 +87,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Endereco\EnderecoCadastroPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
   </ItemGroup>

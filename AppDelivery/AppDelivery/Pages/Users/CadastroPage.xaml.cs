@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppDelivery.Entities;
+using AppDelivery.Pages.Endereco;
 
 namespace AppDelivery.Pages.Users
 {
@@ -49,6 +50,11 @@ namespace AppDelivery.Pages.Users
         bool AreDetailsValid(User user)
         {
             return (!string.IsNullOrWhiteSpace(user.Username) && !string.IsNullOrWhiteSpace(user.Password) && !string.IsNullOrWhiteSpace(user.Email) && user.Email.Contains("@"));
+        }
+
+        private async void btCadastrarFacebook_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EnderecoCadastroPage());
         }
     }
 }

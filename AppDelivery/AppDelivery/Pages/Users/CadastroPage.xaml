@@ -16,8 +16,8 @@
             <Label Text="Telefone:" />
             <Entry x:Name="telCadastrar" Placeholder="Telefone"/>
             <Button Text="Inscrever" Clicked="OnSignUpButtonClicked" />
-            <Button x:Name="btCadastrarFacebook" Text="Acessar Com Facebook"  BackgroundColor="#4282b9" Image="ic_facebook.png" />
-                <Button x:Name="btCadastrarGoogle" Text="Acessar Com Google"  BackgroundColor="#f78a7e" Image="ic_google.png"   />
+            <Button x:Name="btCadastrarFacebook" Clicked="btCadastrarFacebook_Clicked" Text="Inscrever-se Com Facebook"  BackgroundColor="#4282b9" Image="ic_facebook.png" />
+                <Button x:Name="btCadastrarGoogle" Text="Inscrever-se Com Google"  BackgroundColor="#f78a7e" Image="ic_google.png"   />
             <Label x:Name="messageLabel" />
         </StackLayout>
         </ScrollView>

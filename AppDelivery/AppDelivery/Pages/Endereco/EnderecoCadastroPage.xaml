@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDelivery.Pages.Endereco.EnderecoCadastroPage">
+    <ContentPage.Content>
+        <ScrollView >
+
+            <StackLayout>
+                <Label Text="Informe seu endereço" XAlign="Center" FontSize="Large" />
+                <Label Text="Cep:"/>
+                <Entry x:Name="cepCadastro" Placeholder="Insira apenas números" />
+                <Label Text="Logradouro"/>
+                <Entry x:Name="logradouroCadastro" Placeholder="Rua/Alameda/Avenida"/>
+                <Label Text="Complemento:"/>
+                <Entry x:Name="complementoCadastro" Placeholder="Complemento"/>
+                <Label Text="Bairro:"/>
+                <Entry x:Name="bairroCadastro" Placeholder="Bairro"/>
+                <Label Text="Cidade:"/>
+                <Entry x:Name="cidadeCadastro" Placeholder="Cidade"/>
+                <Label Text="UF:"/>
+                <Picker x:Name="ufCadastro" HorizontalOptions="FillAndExpand" Title="UF" 
+                    SelectedIndexChanged="selecionarUFIndexChanged">
+                    <Picker.Items>
+                        <x:String>AC</x:String>
+                        <x:String>AL</x:String>
+                        <x:String>AP</x:String>
+                        <x:String>AM</x:String>
+                        <x:String>TO</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button x:Name="btCadastrarEndereco" Text="Confirmar"/>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
