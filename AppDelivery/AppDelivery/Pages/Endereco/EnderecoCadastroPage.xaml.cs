@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppDelivery.Pages;
 
 namespace AppDelivery.Pages.Endereco
 {
@@ -21,6 +22,11 @@ namespace AppDelivery.Pages.Endereco
         {
             var itemSelecionado = ufCadastro.Items[ufCadastro.SelectedIndex];
             DisplayAlert(itemSelecionado, "Foi o item Selecionado", "OK");
+        }
+
+        private async void btCadastrarEndereco_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
         }
     }
 }

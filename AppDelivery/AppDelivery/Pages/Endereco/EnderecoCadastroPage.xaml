@@ -28,7 +28,7 @@
                         <x:String>TO</x:String>
                     </Picker.Items>
                 </Picker>
-                <Button x:Name="btCadastrarEndereco" Text="Confirmar"/>
+                <Button x:Name="btCadastrarEndereco" Clicked="btCadastrarEndereco_Clicked" Text="Confirmar"/>
 
             </StackLayout>
         </ScrollView>
