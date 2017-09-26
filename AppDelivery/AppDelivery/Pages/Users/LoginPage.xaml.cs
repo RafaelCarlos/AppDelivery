@@ -34,8 +34,9 @@ namespace AppDelivery.Pages.Users
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopAsync();
+                //Navigation.InsertPageBefore(new HomePage(), this);
+                //await Navigation.PushAsync();
+                await Navigation.PushAsync(new HomePage());
             }
             else
             {

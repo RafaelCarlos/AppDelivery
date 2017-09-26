@@ -5,11 +5,11 @@
              x:Class="AppDelivery.MainPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+        <ToolbarItem Text="Sair" Clicked="OnLogoutButtonClicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Main app content goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            <Label Text="Página Inicial" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 

@@ -17,7 +17,7 @@ namespace AppDelivery
         async void OnLogoutButtonClicked(object sender, EventArgs e)
         {
             App.IsUserLoggedIn = false;
-            Navigation.InsertPageBefore(new Login(), this);
+            //Navigation.InsertPageBefore(new Login(), this);
             await Navigation.PopAsync();
         }
 
