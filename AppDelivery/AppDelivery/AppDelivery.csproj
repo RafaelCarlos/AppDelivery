@@ -46,16 +46,16 @@
     <Compile Include="Pages\Endereco\EnderecoCadastroPage.xaml.cs">
       <DependentUpon>EnderecoCadastroPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <Compile Include="Pages\Menu\PaginaMaster.xaml.cs">
+      <DependentUpon>PaginaMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomePageDetail.xaml.cs">
-      <DependentUpon>HomePageDetail.xaml</DependentUpon>
+    <Compile Include="Pages\Menu\PaginaMasterDetail.xaml.cs">
+      <DependentUpon>PaginaMasterDetail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomePageMaster.xaml.cs">
-      <DependentUpon>HomePageMaster.xaml</DependentUpon>
+    <Compile Include="Pages\Menu\PaginaMasterMaster.xaml.cs">
+      <DependentUpon>PaginaMasterMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomePageMenuItem.cs" />
+    <Compile Include="Pages\Menu\PaginaMasterMenuItem.cs" />
     <Compile Include="Pages\Users\CadastroPage.xaml.cs">
       <DependentUpon>CadastroPage.xaml</DependentUpon>
     </Compile>
@@ -119,19 +119,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\HomePage.xaml">
+    <EmbeddedResource Include="Pages\Menu\PaginaMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\HomePageMaster.xaml">
+    <EmbeddedResource Include="Pages\Menu\PaginaMasterMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\HomePageDetail.xaml">
+    <EmbeddedResource Include="Pages\Menu\PaginaMasterDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

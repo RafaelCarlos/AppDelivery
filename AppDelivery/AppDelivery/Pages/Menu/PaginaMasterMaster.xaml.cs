@@ -10,37 +10,37 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppDelivery.Pages
+namespace AppDelivery.Pages.Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePageMaster : ContentPage
+    public partial class PaginaMasterMaster : ContentPage
     {
         public ListView ListView;
 
-        public HomePageMaster()
+        public PaginaMasterMaster()
         {
             InitializeComponent();
 
-            BindingContext = new HomePageMasterViewModel();
+            BindingContext = new PaginaMasterMasterViewModel();
             ListView = MenuItemsListView;
         }
 
-        class HomePageMasterViewModel : INotifyPropertyChanged
+        class PaginaMasterMasterViewModel : INotifyPropertyChanged
         {
-            public ObservableCollection<HomePageMenuItem> MenuItems { get; set; }
-            
-            public HomePageMasterViewModel()
+            public ObservableCollection<PaginaMasterMenuItem> MenuItems { get; set; }
+
+            public PaginaMasterMasterViewModel()
             {
-                MenuItems = new ObservableCollection<HomePageMenuItem>(new[]
+                MenuItems = new ObservableCollection<PaginaMasterMenuItem>(new[]
                 {
-                    new HomePageMenuItem { Id = 0, Title = "Page 1" },
-                    new HomePageMenuItem { Id = 1, Title = "Page 2" },
-                    new HomePageMenuItem { Id = 2, Title = "Page 3" },
-                    new HomePageMenuItem { Id = 3, Title = "Page 4" },
-                    new HomePageMenuItem { Id = 4, Title = "Page 5" },
+                    new PaginaMasterMenuItem { Id = 0, Title = "Page 1" },
+                    new PaginaMasterMenuItem { Id = 1, Title = "Page 2" },
+                    new PaginaMasterMenuItem { Id = 2, Title = "Page 3" },
+                    new PaginaMasterMenuItem { Id = 3, Title = "Page 4" },
+                    new PaginaMasterMenuItem { Id = 4, Title = "Page 5" },
                 });
             }
-            
+
             #region INotifyPropertyChanged Implementation
             public event PropertyChangedEventHandler PropertyChanged;
             void OnPropertyChanged([CallerMemberName] string propertyName = "")

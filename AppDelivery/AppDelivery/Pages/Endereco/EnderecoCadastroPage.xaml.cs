@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppDelivery.Pages;
+using AppDelivery.Pages.Menu;
 
 namespace AppDelivery.Pages.Endereco
 {
@@ -26,7 +27,9 @@ namespace AppDelivery.Pages.Endereco
 
         private async void btCadastrarEndereco_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HomePage());
+            await Navigation.PushAsync(new PaginaMaster());
+            //Navigation.InsertPageBefore(new HomePage(), this);
+            //await Navigation.PushAsync();
         }
     }
 }

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppDelivery.Pages
+namespace AppDelivery.Pages.Menu
 {
 
-    public class HomePageMenuItem
+    public class PaginaMasterMenuItem
     {
-        public HomePageMenuItem()
+        public PaginaMasterMenuItem()
         {
-            TargetType = typeof(HomePageDetail);
+            TargetType = typeof(PaginaMasterDetail);
         }
         public int Id { get; set; }
         public string Title { get; set; }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppDelivery.Pages
+namespace AppDelivery.Pages.Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePageDetail : ContentPage
+    public partial class PaginaMasterDetail : ContentPage
     {
-        public HomePageDetail()
+        public PaginaMasterDetail()
         {
             InitializeComponent();
         }

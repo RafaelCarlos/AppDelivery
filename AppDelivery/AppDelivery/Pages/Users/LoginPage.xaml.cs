@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppDelivery.Entities;
-
+using AppDelivery.Pages.Menu;
 namespace AppDelivery.Pages.Users
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -34,9 +34,9 @@ namespace AppDelivery.Pages.Users
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
-                //Navigation.InsertPageBefore(new HomePage(), this);
+                //Navigation.InsertPageBefore(new PaginaMaster(), this);
                 //await Navigation.PushAsync();
-                await Navigation.PushAsync(new HomePage());
+                await Navigation.PushAsync(new PaginaMaster());
             }
             else
             {

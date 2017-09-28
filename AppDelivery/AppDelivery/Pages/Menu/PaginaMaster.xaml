@@ -1,19 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:AppDelivery"
-             x:Class="AppDelivery.MainPage">
-
-
+             x:Class="AppDelivery.Pages.Menu.PaginaMaster"
+             xmlns:pages="clr-namespace:AppDelivery.Pages.Menu"
+                  xmlns:local="clr-namespace:AppDelivery;assembly=AppDelivery">
     <MasterDetailPage.Master>
-        <ContentPage.ToolbarItems>
-            <ToolbarItem Text="Sair" Clicked="OnLogoutButtonClicked" />
-        </ContentPage.ToolbarItems>
-        <ContentPage.Content>
-            <StackLayout>
-                <Label Text="Página Inicial" HorizontalOptiosns="Center" VerticalOptions="CenterAndExpand" />
-            </StackLayout>
-        </ContentPage.Content>
         <pages:PaginaMasterMaster x:Name="MasterPage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
@@ -25,6 +16,4 @@
       </x:Arguments>
     </NavigationPage>-->
     </MasterDetailPage.Detail>
-
-    <!--Inserir dados do app como um rodapé-->
 </MasterDetailPage>
